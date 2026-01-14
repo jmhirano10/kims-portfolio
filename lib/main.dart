@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kims_portfolio/layout.dart';
+import 'package:kims_portfolio/routes.dart';
  
 void main() {
   runApp(const KimsPortfolio());
@@ -10,7 +11,10 @@ class KimsPortfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PortfolioLayout(),
+      builder: (context, child) => PortfolioLayout(child: child),
+      initialRoute: aboutRoute,
+      navigatorKey: navKey,
+      onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }
