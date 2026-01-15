@@ -23,3 +23,21 @@ class Experience_1 {
     'Participated in client meetings and contributed to project presentations.',
   ];
 }
+
+class Experience_2 {
+  static const String position = 'Student Associate';
+  static const String company = 'Some Other Firm Inc.';
+  static const String duration = 'May 2022 - Aug 2022';
+  static const List<String> description = [
+    'Assisted in the design and documentation of architectural plans.',
+    'Collaborated with senior architects to ensure compliance with building codes and regulations.',
+    'Participated in client meetings and contributed to project presentations.',
+  ];
+}
+
+class Education_1 {
+  static const String position = 'Bachelor of Architectural Studies';
+  static const String company = 'Carleton University';
+  static const String duration = 'Sep 2021 - Present';
+  static const List<String> description = [];
+}

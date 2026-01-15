@@ -1,6 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:kims_portfolio/styles/style.dart';
 
+class JotNoteWidget extends StatelessWidget {
+  final String note;
+
+  const JotNoteWidget({
+    required this.note,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(
+          '• ',
+          style: pBody,
+        ),
+        Text(
+            note,
+            style: pBody
+        ),
+      ],
+    );
+  }
+}
+
 class ExperienceWidget extends StatelessWidget {
   final String position;
   final String company;
@@ -17,16 +41,13 @@ class ExperienceWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 200.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             position,
-            style: pSubHeader.copyWith(
-              color: kSubHeaderColor,
-              fontWeight: FontWeight.bold,
-            ),
+            style: pSubHeader,
           ),
           Text(
             '$company | $duration',
@@ -37,7 +58,7 @@ class ExperienceWidget extends StatelessWidget {
           ),
           SizedBox(height: 5),
           Column(
-            children: description.map((item) => Text(item)).toList(),
+            children: description.map((item) => JotNoteWidget(note: item)).toList(),
           )
         ],
       ),
