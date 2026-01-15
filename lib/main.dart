@@ -12,7 +12,7 @@ class KimsPortfolio extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       builder: (context, child) => PortfolioLayout(child: child),
-      initialRoute: aboutRoute,
+      initialRoute: portfolioRoute,
       navigatorKey: navKey,
       onGenerateRoute: RouteGenerator.generateRoute,
     );

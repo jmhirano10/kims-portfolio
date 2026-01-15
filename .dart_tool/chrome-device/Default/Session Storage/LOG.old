@@ -1,3 +1,8 @@
-2026/01/13-23:33:46.280 167e8c Reusing MANIFEST /private/var/folders/wz/0h6v0rdx6xzgbh_xk4cyzmlw0000gn/T/flutter_tools.knS2mk/flutter_tools_chrome_device.YlerF8/Default/Session Storage/MANIFEST-000001
-2026/01/13-23:33:46.280 167e8c Recovering log #3
-2026/01/13-23:33:46.281 167e8c Reusing old log /private/var/folders/wz/0h6v0rdx6xzgbh_xk4cyzmlw0000gn/T/flutter_tools.knS2mk/flutter_tools_chrome_device.YlerF8/Default/Session Storage/000003.log 
+2026/01/14-22:36:01.377 1a0e12 Reusing MANIFEST /private/var/folders/wz/0h6v0rdx6xzgbh_xk4cyzmlw0000gn/T/flutter_tools.SwYCaz/flutter_tools_chrome_device.F0V5Lq/Default/Session Storage/MANIFEST-000001
+2026/01/14-22:36:01.377 1a0e12 Recovering log #18
+2026/01/14-22:36:01.377 1a0e12 Reusing old log /private/var/folders/wz/0h6v0rdx6xzgbh_xk4cyzmlw0000gn/T/flutter_tools.SwYCaz/flutter_tools_chrome_device.F0V5Lq/Default/Session Storage/000018.log 
+2026/01/14-22:36:01.378 1a0e12 Delete type=0 #4
+2026/01/14-22:36:01.378 1a0e12 Delete type=0 #3
+2026/01/14-23:18:07.616 1a0e15 Level-0 table #22: started
+2026/01/14-23:18:07.620 1a0e15 Level-0 table #22: 16444 bytes OK
+2026/01/14-23:18:07.622 1a0e15 Delete type=0 #18

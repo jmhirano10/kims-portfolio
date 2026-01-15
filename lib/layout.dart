@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kims_portfolio/navigation/navigation_bar.dart' as local_nav_bar;
+import 'package:kims_portfolio/styles/style.dart';
 
 class PortfolioLayout extends StatefulWidget {
     final Widget? child;
@@ -15,6 +16,7 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
     @override
     Widget build(BuildContext context) {
         return Scaffold(
+            backgroundColor: kMainColor,
             body: Center(
                 child: Column (
                     children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kims_portfolio/routes.dart';
+import 'package:kims_portfolio/styles/style.dart';
 
 class NavigationItem extends StatelessWidget {
   
@@ -21,7 +22,7 @@ class NavigationItem extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 50.0),
                 child: Text(
                     title,
-                    style: TextStyle(fontSize: 20.0),
+                    style: pNavItem,
                 ),
             ),
         );

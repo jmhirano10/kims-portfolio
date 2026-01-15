@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kims_portfolio/navigation/navigation_item.dart';
 import 'package:kims_portfolio/routes.dart';
+import 'package:kims_portfolio/styles/style.dart';
 
 class NavigationBar extends StatefulWidget {
     @override
@@ -12,18 +13,19 @@ class _NavigationBarState extends State<NavigationBar> {
     @override
     Widget build(BuildContext context) {
         return Container(
-            height: 100.0,
+            height: 60.0,
+            color: kNavBarColor,
             child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.end,
                 mainAxisSize: MainAxisSize.max,
                 children: [
                     NavigationItem(
-                        title: 'About',
-                        route: aboutRoute,
+                        title: 'Portfolio',
+                        route: portfolioRoute,
                     ),
                     NavigationItem(
-                        title: 'Projects',
-                        route: projectsRoute,
+                        title: 'Resume',
+                        route: resumeRoute,
                     ),
                     NavigationItem(
                         title: 'Contact',
