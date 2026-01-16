@@ -13,6 +13,7 @@ class Project_1 {
 }   
 
 //Resume Data
+
 class Experience_1 {
   static const String position = 'Architectural Intern';
   static const String company = 'Some Firm Inc.';
@@ -41,3 +42,13 @@ class Education_1 {
   static const String duration = 'Sep 2021 - Present';
   static const List<String> description = [];
 }
+
+class Skills {
+  static const List<String> skillList = [
+    'Proficient in AutoCAD, Revit, SketchUp, and Rhino 3D',
+    'Strong understanding of building codes and regulations',
+    'Excellent communication and teamwork skills',
+  ];
+}
+
+const String interests = 'In my free time, I enjoy painting and drawing. I have worked on several art projects for friends and family that include murals and portraits. I also enjoy unwinding with a nice board game. I like to play strategy games that challenge my critical thinking skills, such as Catan and Carcassonne. I also enjoy hiking and exploring nature trails, which helps me find inspiration for my architectural designs. I am passionate about sustainable architecture and often read about the latest trends and innovations in green building practices.';

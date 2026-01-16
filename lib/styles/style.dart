@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
+// Color Constants
+
 const kMainColor = Color(0xFFf7fffe);
 const kAccentColor = Color(0xFF575757);
 const kHeaderColor = Color(0xFBeef4f0);
 const kSubHeaderColor = Color(0xFF003649);
+const kSubSubHeaderColor = Color(0xFF07575b);
 const kBodyColor = Color(0xFF2c2c2c);
 const kNavColor = Color(0xFF0c2f4b);
 const kNavBarColor = Color(0xFFd1eae7);
+
+// Text Style Constants
 
 const TextStyle pMainHeader = TextStyle(    
     fontSize: 50,
@@ -17,6 +22,11 @@ const TextStyle pSubHeader = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.w500,
     color: kSubHeaderColor,
+);
+const TextStyle pSubSubHeader = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: kSubSubHeaderColor,
 );
 const TextStyle pNavItem = TextStyle(
     fontSize: 24,
@@ -33,3 +43,8 @@ const TextStyle pFooter = TextStyle(
     fontWeight: FontWeight.normal,
     color: Colors.white,
 );
+
+// Spacing Constants
+const double rSectionSpacing = 60.0;
+const double rDividerIndent = 100.0;
+const double rItemIndent = 20.0;
