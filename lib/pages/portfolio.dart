@@ -14,7 +14,7 @@ class PortfolioPage extends StatelessWidget {
           children: [
               MainHeaderWidget(
                 title: 'Kimberly Hirano',
-                imagePath: 'images/bg_01.jpg',
+                imagePath: 'assets/images/bg_01.jpg',
               ),
               AboutWidget(),
               Divider(
