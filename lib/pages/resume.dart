@@ -4,7 +4,7 @@ import 'package:kims_portfolio/data/data.dart';
 import 'package:kims_portfolio/resume/experience.dart';
 import 'package:kims_portfolio/resume/skills.dart';
 import 'package:kims_portfolio/resume/interest.dart';
-import 'package:kims_portfolio/footer.dart';
+import 'package:kims_portfolio/widgets/widgets.dart';
 
 class ResumePage extends StatelessWidget {
     @override
@@ -17,9 +17,10 @@ class ResumePage extends StatelessWidget {
                         child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                                SizedBox(height: 100),
                                 Text(
                                     'Resume',
-                                    style: pMainHeader,
+                                    style: pDarkMainHeader,
                                 ),
                                 SizedBox(height: rSectionSpacing),
                                 Padding(

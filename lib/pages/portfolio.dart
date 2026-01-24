@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:kims_portfolio/styles/style.dart';
 import 'package:kims_portfolio/data/data.dart';
-import 'package:kims_portfolio/project.dart';
-import 'package:kims_portfolio/footer.dart';
-import 'package:kims_portfolio/about.dart';
+import 'package:kims_portfolio/portfolio/project.dart';
+import 'package:kims_portfolio/portfolio/about.dart';
+import 'package:kims_portfolio/widgets/widgets.dart';
 
 class PortfolioPage extends StatelessWidget {
   @override
@@ -12,26 +12,9 @@ class PortfolioPage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-              Stack(
-                  children: [
-                      Container(
-                          width: double.infinity,
-                          height: 400,
-                          decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  image: AssetImage('images/bg_01.jpg'),
-                                  fit: BoxFit.cover,
-                              ),
-                          ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.all(50),
-                        child: Text(
-                          'Kimberly Hirano',
-                          style: pMainHeader,
-                        ),
-                      ),
-                  ],
+              MainHeaderWidget(
+                title: 'Kimberly Hirano',
+                imagePath: 'images/bg_01.jpg',
               ),
               AboutWidget(),
               Divider(

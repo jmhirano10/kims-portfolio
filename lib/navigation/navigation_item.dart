@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kims_portfolio/routes.dart';
+import 'package:kims_portfolio/navigation/routes.dart';
 import 'package:kims_portfolio/styles/style.dart';
 
 class NavigationItem extends StatelessWidget {
