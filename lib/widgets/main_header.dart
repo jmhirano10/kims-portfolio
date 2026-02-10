@@ -12,26 +12,30 @@ class MainHeaderWidget extends StatelessWidget {
 
     @override
     Widget build(BuildContext context) {
-        return Stack(
-            children: [
-                Container(
-                    width: double.infinity,
-                    height: 400,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage(imagePath),
-                            fit: BoxFit.cover,
+        return SizedBox(
+            width: double.infinity,
+            height: 400,
+            child: Stack(
+                children: [
+                    Container(
+                        width: double.infinity,
+                        height: 400,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(imagePath),
+                                fit: BoxFit.cover,
+                            ),
                         ),
                     ),
-                ),
-                Container(
-                padding: EdgeInsets.all(50),
-                child: Text(
-                    title,
-                    style: pMainHeader,
-                ),
-                ),
-            ],
+                    Container(
+                        padding: EdgeInsets.all(50),
+                        child: Text(
+                            title,
+                            style: pMainHeader,
+                        ),
+                    ),
+                ],
+            ),
         );
     }
 }
