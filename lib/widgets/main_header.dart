@@ -22,7 +22,13 @@ class MainHeaderWidget extends StatelessWidget {
                         height: 400,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage(imagePath),
+                                image: Image.asset(
+                                    imagePath
+                                    errorBuilder: (context, error, stackTrace) {
+                                        debugPrint('ERROR: $error');
+                                        return const Text('Failed');
+                                    },
+                                ),
                                 fit: BoxFit.cover,
                             ),
                         ),
