@@ -17,6 +17,13 @@ jobs:
       - run: flutter clean
       - run: flutter pub get
       - run: flutter build web --release
+      - name: List build output
+        run: |
+          echo "=== Image files ==="
+          find build/web -name "*.jpg"
+
+          echo "=== Assets directory ==="
+          ls -R build/web/assets
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
