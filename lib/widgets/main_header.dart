@@ -27,13 +27,6 @@ class MainHeaderWidget extends StatelessWidget {
                             ),
                         ),
                     ),
-                    Image.asset(
-                                    imagePath,
-                                    errorBuilder: (context, error, stackTrace) {
-                                        debugPrint('ERROR: $error');
-                                        return const Text('Failed');
-                                    },
-                                ),
                     Container(
                         padding: EdgeInsets.all(50),
                         child: Text(
