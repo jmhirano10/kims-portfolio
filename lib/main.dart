@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:kims_portfolio/layout.dart';
 import 'package:kims_portfolio/pages/portfolio.dart';
  
 void main() {
