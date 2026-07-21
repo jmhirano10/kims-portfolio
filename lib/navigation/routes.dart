@@ -44,4 +44,4 @@ class RouteGenerator {
         return CustomRouteBuilder(page: PortfolioPage());
     }
   }
-}
+} 
