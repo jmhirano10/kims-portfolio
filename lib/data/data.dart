@@ -5,7 +5,23 @@ const String sAboutMeText = 'I am a Carleton University Architectural Design (BA
 //Project Data
 
 class Project_1 {
-  static const String title = 'MORIYAMA HOUSE, TOKYO, JAPAN';
+  static const String title = 'OF REVISIONS and RECOGNITIONS - MORIYAMA HOUSE, TOKYO, JAPAN';
+  static const String date = 'Fall 2023';
+  static const List<String> toolsUsed = ['Hand Drafting'];
+  static const String description1 = 'Through research, hand drafting, and careful analysis, we uncovered how our case study home was shaped by its site, its history, and the quiet intentions embedded in its geometry. Plans, sections, and diagrams became tools for reading the building\'s narrative: its rhythms of light, its thresholds, and its hidden structure of ideas. From this understanding, we developed a small intervention, part critique and part homage, that reveals what we believe the house was always trying to say. The project became an act of recognition, tracing the logic of another architect\'s work to better understand our own.';
+  static const String description2 = 'Circulation in the Moriyama House is characterized by fragmentation, openness, and a deliberate slowing of everyday movement. The separated arrangement of freestanding houses requires residents to pause as they navigate between spaces, stepping outside, sensing weather, and observing shifts in light and sound. These small transitions invite moments of stillness and create opportunities to listen to the house and its surroundings. In this way, movement is not only about reaching a destination but about tuning into the rhythms of the site.';
+}   
+
+class Project_2 {
+  static const String title = 'Recreation: Cinematheque & Ottawa School of Art';
+  static const String date = 'Fall 2023';
+  static const List<String> toolsUsed = ['Hand Drafting'];
+  static const String description1 = 'Through research, hand drafting, and careful analysis, we uncovered how our case study home was shaped by its site, its history, and the quiet intentions embedded in its geometry. Plans, sections, and diagrams became tools for reading the building\'s narrative: its rhythms of light, its thresholds, and its hidden structure of ideas. From this understanding, we developed a small intervention, part critique and part homage, that reveals what we believe the house was always trying to say. The project became an act of recognition, tracing the logic of another architect\'s work to better understand our own.';
+  static const String description2 = 'Circulation in the Moriyama House is characterized by fragmentation, openness, and a deliberate slowing of everyday movement. The separated arrangement of freestanding houses requires residents to pause as they navigate between spaces, stepping outside, sensing weather, and observing shifts in light and sound. These small transitions invite moments of stillness and create opportunities to listen to the house and its surroundings. In this way, movement is not only about reaching a destination but about tuning into the rhythms of the site.';
+}   
+
+class Project_3 {
+  static const String title = 'Housing, Community, City Building & Placemaking ';
   static const String date = 'Fall 2023';
   static const List<String> toolsUsed = ['Hand Drafting'];
   static const String description1 = 'Through research, hand drafting, and careful analysis, we uncovered how our case study home was shaped by its site, its history, and the quiet intentions embedded in its geometry. Plans, sections, and diagrams became tools for reading the building\'s narrative: its rhythms of light, its thresholds, and its hidden structure of ideas. From this understanding, we developed a small intervention, part critique and part homage, that reveals what we believe the house was always trying to say. The project became an act of recognition, tracing the logic of another architect\'s work to better understand our own.';
