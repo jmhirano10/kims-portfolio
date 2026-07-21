@@ -9,17 +9,39 @@ const String resumeRoute = '/resume';
 
 final navKey = GlobalKey<NavigatorState>();
 
+class CustomRouteBuilder extends PageRouteBuilder {
+  final Widget page;
+
+  CustomRouteBuilder({required this.page})
+      : super(
+          pageBuilder: (context, animation, secondaryAnimation) => page,
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            const begin = Offset(1.0, 0.0);
+            const end = Offset.zero;
+            const curve = Curves.easeInOut;
+
+            var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+            var offsetAnimation = animation.drive(tween);
+
+            return SlideTransition(
+              position: offsetAnimation,
+              child: child,
+            );
+          },
+        );
+}
+
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case portfolioRoute:
-        return MaterialPageRoute(builder: (_) => PortfolioPage());
+        return CustomRouteBuilder(page: PortfolioPage());
       case contactRoute:
-        return MaterialPageRoute(builder: (_) => ContactPage());
+        return CustomRouteBuilder(page: ContactPage());
       case resumeRoute:
-        return MaterialPageRoute(builder: (_) => ResumePage());
+        return CustomRouteBuilder(page: ResumePage());
       default:
-        return MaterialPageRoute(builder: (_) => PortfolioPage());
+        return CustomRouteBuilder(page: PortfolioPage());
     }
   }
 }
