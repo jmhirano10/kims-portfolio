@@ -6,6 +6,8 @@ import 'package:kims_portfolio/portfolio/about.dart';
 import 'package:kims_portfolio/widgets/widgets.dart';
 
 class PortfolioPage extends StatelessWidget {
+  const PortfolioPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Center(

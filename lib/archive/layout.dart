@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kims_portfolio/navigation/navigation_bar.dart' as local_nav_bar;
 import 'package:kims_portfolio/styles/style.dart';
 
 class PortfolioLayout extends StatefulWidget {
@@ -20,7 +19,6 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
             body: Center(
                 child: Column (
                     children: [
-                        local_nav_bar.NavigationBar(),
                         Expanded(
                             child: widget.child ?? Container(),
                         ),
