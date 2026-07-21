@@ -10,10 +10,11 @@ class PortfolioPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
+    return Scaffold(
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
               MainHeaderWidget(
                 title: 'Kimberly Hirano',
                 imagePath: 'assets/images/bg_01.jpg',
@@ -26,11 +27,11 @@ class PortfolioPage extends StatelessWidget {
                 endIndent: 200,       // Empty space at the end of the line
               ),
               ProjectWidget(
-                  title: Project_1.title,
-                  date: Project_1.date,
-                  toolsUsed: Project_1.toolsUsed,
-                  description1: Project_1.description1,
-                  description2: Project_1.description2,
+                title: Project_1.title,
+                date: Project_1.date,
+                toolsUsed: Project_1.toolsUsed,
+                description1: Project_1.description1,
+                description2: Project_1.description2,
               ),
               Divider(
                 color: kAccentColor, // Color of the line
@@ -39,11 +40,11 @@ class PortfolioPage extends StatelessWidget {
                 endIndent: 200,       // Empty space at the end of the line
               ),
               ProjectWidget(
-                  title: Project_1.title,
-                  date: Project_1.date,
-                  toolsUsed: Project_1.toolsUsed,
-                  description1: Project_1.description1,
-                  description2: Project_1.description2,
+                title: Project_1.title,
+                date: Project_1.date,
+                toolsUsed: Project_1.toolsUsed,
+                description1: Project_1.description1,
+                description2: Project_1.description2,
               ),
               Divider(
                 color: kAccentColor, // Color of the line
@@ -52,14 +53,15 @@ class PortfolioPage extends StatelessWidget {
                 endIndent: 200,       // Empty space at the end of the line
               ),
               ProjectWidget(
-                  title: Project_1.title,
-                  date: Project_1.date,
-                  toolsUsed: Project_1.toolsUsed,
-                  description1: Project_1.description1,
-                  description2: Project_1.description2,
+                title: Project_1.title,
+                date: Project_1.date,
+                toolsUsed: Project_1.toolsUsed,
+                description1: Project_1.description1,
+                description2: Project_1.description2,
               ),
               FooterWidget(),
-          ],
+            ],
+          ),
         ),
       ),
     );
