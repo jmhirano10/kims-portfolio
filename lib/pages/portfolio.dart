@@ -32,6 +32,32 @@ class PortfolioPage extends StatelessWidget {
                   description1: Project_1.description1,
                   description2: Project_1.description2,
               ),
+              Divider(
+                color: kAccentColor, // Color of the line
+                thickness: 2,        // Thickness of the line
+                indent: 200,          // Empty space at the beginning of the line
+                endIndent: 200,       // Empty space at the end of the line
+              ),
+              ProjectWidget(
+                  title: Project_1.title,
+                  date: Project_1.date,
+                  toolsUsed: Project_1.toolsUsed,
+                  description1: Project_1.description1,
+                  description2: Project_1.description2,
+              ),
+              Divider(
+                color: kAccentColor, // Color of the line
+                thickness: 2,        // Thickness of the line
+                indent: 200,          // Empty space at the beginning of the line
+                endIndent: 200,       // Empty space at the end of the line
+              ),
+              ProjectWidget(
+                  title: Project_1.title,
+                  date: Project_1.date,
+                  toolsUsed: Project_1.toolsUsed,
+                  description1: Project_1.description1,
+                  description2: Project_1.description2,
+              ),
               FooterWidget(),
           ],
         ),
